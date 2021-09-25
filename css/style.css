@@ -1,18 +1,94 @@
-.impimg {
+img {
   width: 400px;
   height: 300px;
   border: solid 5px red;
+  border-radius: 15px;
 }
 
-.imph1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: aqua;
+h1 {
+  color: red;
+  font-family: fantasy;
   margin: 20px 30px;
 }
 
+.red-text h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  width: 600px;
+}
+
 p {
-  background-color: darkgray;
+  background-color: lightblue;
   width: 40%;
   height: 50%;
   display: -moz-grid-line;
+}
+
+#pagedesc {
+  text-decoration: underline;
+  width: 300px;
+}
+
+body > #pagedesc {
+  width: 200px;
+}
+
+article > h1 {
+  border-bottom: 2px dotted black;
+  font-family: cursive;
+}
+
+article h5 {
+  color: pink;
+}
+
+h5 + h6 {
+  text-decoration: underline;
+}
+
+h5 ~ img {
+  width: 50px;
+}
+
+p:hover {
+  color: magenta;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+p:active {
+  padding: 10px;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: pink;
+}
+
+a {
+  color: black;
+}
+
+img:hover {
+  box-shadow: 3px 3px 6px grey;
+}
+
+img:active {
+  box-shadow: 1px 1px 1px grey;
+}
+
+:not(.red-text) {
+  color: greenyellow;
+}
+
+ul > li:nth-child(2) {
+  font-size: x-large;
 }
